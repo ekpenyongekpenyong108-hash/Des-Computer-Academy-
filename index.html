@@ -3,189 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Des Computer Academy | Design • Code • AI</title>
+    <title>De’s Computer Academy | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap');
-        
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .code-font { font-family: 'Fira Code', monospace; }
-        
-        .glass {
-            background: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
         .gradient-text {
-            background: linear-gradient(90deg, #22d3ee, #818cf8, #c084fc);
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-        .chat-dot { animation: pulse 1.5s infinite; }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-        }
+        section { scroll-margin-top: 80px; }
+        .modal { transition: opacity 0.25s ease; }
+        body.modal-active { overflow: hidden; }
     </style>
 </head>
-<body class="bg-[#020617] text-slate-200">
+<body class="bg-slate-900 text-slate-100 font-sans">
 
-    <nav class="fixed w-full z-50 glass border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
-            <div class="text-xl font-black tracking-tighter gradient-text uppercase">Des Computer Academy</div>
-            <div class="hidden md:flex gap-8 text-xs font-bold tracking-widest uppercase">
-                <a href="#about" class="hover:text-cyan-400 transition">About</a>
-                <a href="#services" class="hover:text-cyan-400 transition">Services</a>
-                <a href="#work" class="hover:text-cyan-400 transition">Work</a>
-                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
-                <a href="#ai" class="text-cyan-400 border border-cyan-400/30 px-3 py-1 rounded">AI Lab</a>
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter uppercase">DE'S <span class="text-blue-400">Academy</span></h1>
+            <div class="space-x-8 hidden md:block">
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#portfolio" class="hover:text-blue-400 transition">Portfolio</a>
+              <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-full transition">Hire Me</a>
             </div>
         </div>
     </nav>
 
-    <section id="about" class="pt-32 pb-20 px-6 max-w-7xl mx-auto text-center">
-        <div class="inline-block px-4 py-1 rounded-full border border-slate-700 bg-slate-900/50 text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-400 mb-8">
-            Web • Graphic • AI Integration
-        </div>
-        <h1 class="text-5xl md:text-8xl font-extrabold mb-8 tracking-tight text-white">
-            Design the <span class="gradient-text">Interface.</span><br>
-            Code the <span class="text-slate-500 italic font-light">Intelligence.</span>
-        </h1>
-        <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-12">
-            I am a versatile Web and Graphic Designer, Developer, and AI Specialist. 
-            I bridge the gap between aesthetics and technology, transforming ideas into 
-            intuitive platforms and intelligent digital solutions.
-        </p>
-        <div class="flex justify-center gap-4">
-            <a href="#work" class="bg-cyan-600 hover:bg-cyan-500 text-white px-8 py-3 rounded-full font-bold transition shadow-lg shadow-cyan-900/20">View Projects</a>
-            <a href="#ai" class="glass px-8 py-3 rounded-full font-bold hover:bg-slate-800 transition">Talk to my AI</a>
+    <section class="min-h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-3xl">
+            <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-sm font-medium mb-6 bg-blue-500/10">
+                Available for Q1 2026 Projects
+            </div>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6">Designing the <span class="gradient-text">Future</span> of Web.</h2>
+            <p class="text-lg text-slate-400 mb-8">Web Developer & AI Integration Specialist at De's Computer Academy. We turn logic into art.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#portfolio" class="px-8 py-3 bg-white text-slate-900 font-semibold rounded-lg hover:bg-slate-200 transition">View Projects</a>
+                <a href="#contact" class="px-8 py-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition">Contact Me</a>
+            </div>
         </div>
     </section>
+  
+  <section id="services" class="py-24 bg-slate-800/30">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">Expertise</h3>
+                <h2 class="text-4xl font-bold">Solutions I Provide</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
 
-    <section id="services" class="py-24 bg-slate-950/50 border-y border-slate-900">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-16 text-center">What I Offer</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="p-8 glass rounded-3xl hover:border-cyan-500/50 transition-all group">
-                    <i data-lucide="layout" class="text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-xl mb-3 text-white">Web Design</h3>
-                    <p class="text-slate-400 text-sm">Crafting responsive, user-friendly websites using modern frameworks.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group p-8 bg-slate-900 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors">
+                        <i class="fa-solid fa-desktop text-blue-400 group-hover:text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Web Design</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Modern, high-conversion layouts designed in Figma and brought to life with clean code.</p>
                 </div>
-                <div class="p-8 glass rounded-3xl hover:border-purple-500/50 transition-all group">
-                    <i data-lucide="palette" class="text-purple-400 mb-6 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-xl mb-3 text-white">Graphic Design</h3>
-                    <p class="text-slate-400 text-sm">Compelling visuals and branding elements that resonate with audiences.</p>
+
+                <div class="group p-8 bg-slate-900 rounded-2xl border border-slate-700 hover:border-purple-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-500 transition-colors">
+                        <i class="fa-solid fa-pen-nib text-purple-400 group-hover:text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Graphic Design</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Visual identities, branding kits, and digital assets that tell your unique brand story.</p>
                 </div>
-                <div class="p-8 glass rounded-3xl hover:border-green-500/50 transition-all group">
-                    <i data-lucide="bot" class="text-green-400 mb-6 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-xl mb-3 text-white">AI Chatbots</h3>
-                    <p class="text-slate-400 text-sm">Interactive AI-powered assistants to improve engagement and automation.</p>
+
+                <div class="group p-8 bg-slate-900 rounded-2xl border border-slate-700 hover:border-green-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-green-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-500 transition-colors">
+                        <i class="fa-solid fa-robot text-green-400 group-hover:text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">AI Chatbots</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Intelligent agents and RAG systems to automate customer support and lead capture.</p>
                 </div>
-                <div class="p-8 glass rounded-3xl hover:border-orange-500/50 transition-all group">
-                    <i data-lucide="cpu" class="text-orange-400 mb-6 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-xl mb-3 text-white">Full-Stack</h3>
-                    <p class="text-slate-400 text-sm">Complete end-to-end web applications tailored to specific client needs.</p>
+
+                <div class="group p-8 bg-slate-900 rounded-2xl border border-slate-700 hover:border-orange-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-orange-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors">
+                        <i class="fa-solid fa-server text-orange-400 group-hover:text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Full-Stack Dev</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">End-to-end applications built with scalable backends and lightning-fast frontends.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="work" class="py-24 max-w-7xl mx-auto px-6"> 
-        <h2 class="text-3xl font-bold mb-16 text-center">Des Computer Academy Highlights</h2> 
-        <div class="grid md:grid-cols-3 gap-8"> <div class="glass p-6 rounded-3xl"> 
-            <div class="h-48 bg-slate-800 rounded-2xl mb-4 flex items-center justify-center">Design Work</div> 
-            <h3 class="font-bold">Visual Identity Systems</h3> </div> 
-            <div class="glass p-6 rounded-3xl"> <div class="h-48 bg-slate-800 rounded-2xl mb-4 flex items-center justify-center">Web Dev</div> 
-                <h3 class="font-bold">Responsive Applications</h3> </div> 
-            <div class="glass p-6 rounded-3xl"> <div class="h-48 bg-slate-800 rounded-2xl mb-4 flex items-center justify-center">AI Agents</div> 
-                <h3 class="font-bold">Intelligent Assistants</h3> </div> </div> </section>
 
-    <section id="ai" class="py-24 px-6 max-w-5xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-4xl font-black mb-6">The AI Integration Lab</h2>
-                <p class="text-slate-400 mb-6 leading-relaxed">
-                    Test a custom integration right here. My bots are trained to handle complex queries, brand storytelling, and user navigation simultaneously.
-                </p>
-                <div class="space-y-4 font-bold text-sm">
-                    <div class="flex items-center gap-3 text-cyan-400"><i data-lucide="check-circle" size="18"></i> Natural Language Processing</div>
-                    <div class="flex items-center gap-3 text-purple-400"><i data-lucide="check-circle" size="18"></i> Custom Knowledge Bases</div>
-                    <div class="flex items-center gap-3 text-green-400"><i data-lucide="check-circle" size="18"></i> 24/7 Automated Support</div>
-                </div>
-            </div>
-
-            <div class="glass rounded-3xl overflow-hidden shadow-2xl flex flex-col h-[450px]">
-                <div class="p-4 bg-slate-900 border-b border-slate-800 flex items-center gap-3">
-                    <div class="w-2 h-2 rounded-full bg-green-500 chat-dot"></div>
-                    <span class="text-xs font-bold uppercase tracking-widest">Des Computer Academy AI Assistant</span>
-                </div>
-                <div id="chat-window" class="flex-1 p-6 overflow-y-auto space-y-4 text-sm scroll-smooth">
-                    <div class="bg-slate-800 p-3 rounded-2xl rounded-tl-none mr-12 text-slate-200">
-                        Hello! I am Des Computer Academy's AI representative. How can I help you today?
+    <section id="portfolio" class="py-20 bg-slate-800/30">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-12">Featured Work</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div onclick="openModal('modal-web')" class="group cursor-pointer relative overflow-hidden rounded-2xl bg-slate-800 aspect-video border border-slate-700 hover:border-blue-500 transition-all">
+                    <div class="absolute inset-0 bg-blue-600/20 group-hover:bg-blue-600/10 transition"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-slate-900">
+                        <span class="text-blue-400 text-sm font-bold uppercase tracking-widest">Development</span>
+                        <h5 class="text-2xl font-bold">Responsive E-Commerce</h5>
+                        <p class="text-slate-400">Click to view details</p>
                     </div>
                 </div>
-                <form id="chat-form" class="p-4 bg-slate-900/50 border-t border-slate-800 flex gap-2">
-                    <input id="user-input" type="text" placeholder="Ask about my skills..." class="flex-1 bg-slate-800 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 transition">
-                    <button type="submit" class="bg-cyan-600 p-2 rounded-full hover:bg-cyan-500 transition">
-                        <i data-lucide="send" size="18"></i>
+                <div onclick="openModal('modal-ai')" class="group cursor-pointer relative overflow-hidden rounded-2xl bg-slate-800 aspect-video border border-slate-700 hover:border-purple-500 transition-all">
+                    <div class="absolute inset-0 bg-purple-600/20 group-hover:bg-purple-600/10 transition"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-slate-900">
+                        <span class="text-purple-400 text-sm font-bold uppercase tracking-widest">AI Integration</span>
+                        <h5 class="text-2xl font-bold">Smart Chatbot Assistant</h5>
+                        <p class="text-slate-400">Click to view details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-slate-800 p-8 md:p-12 rounded-3xl border border-slate-700">
+                <h3 class="text-3xl font-bold mb-2">Let's work together</h3>
+                <p class="text-slate-400 mb-8">Fill out the form below and I'll get back to you within 24 hours.</p>
+                
+                <form action="https://formspree.io/f/your-id" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-slate-300">Name</label>
+                        <input type="text" name="name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition text-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-slate-300">Email</label>
+                        <input type="email" name="email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition text-white">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium mb-2 text-slate-300">Project Goal</label>
+                        <textarea name="message" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition text-white" placeholder="Tell me about your vision..."></textarea>
+                    </div>
+                    <button type="submit" class="md:col-span-2 bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-lg transition shadow-lg shadow-blue-900/20">
+                        Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
                     </button>
                 </form>
             </div>
         </div>
     </section>
+  
+<section id="about1" class="py-20 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                
+                <div class="md:col-span-4 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full opacity-70 group-hover:opacity-100 blur transition-opacity duration-300"></div>
+                        
+                        <img 
+                            src="my-picture.jpg" 
+                            alt="Your Name - De's Computer Academy" 
+                            class="relative object-cover w-64 h-64 md:w-full md:h-auto aspect-square rounded-full border-4 border-slate-900 shadow-2xl"
+                        />
+                    </div>
+                </div>
 
-    <footer class="py-12 border-t border-slate-900 text-center">
-        <p class="text-slate-500 text-xs tracking-widest uppercase">© 2026 Des Computer Academy • Engineered with Passion</p>
+                <div class="md:col-span-5">
+                    <h3 class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">My Story</h3>
+                    <h2 class="text-4xl font-bold mb-6">At the Intersection of <span class="text-white">Logic & Design</span></h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        I Ekpenyong Ekpenyong Sunday, I am the founder of <span class="text-blue-400 font-semibold">De’s Computer Academy</span>, where I dedicate my craft to solving complex digital problems. My journey started with a fascination for how code can bring static art to life. Today, I specialize in building high-performance web systems integrated with intelligent AI agents.
+                    </p>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Whether it’s a pixel-perfect user interface or a robust back-end architecture, my goal is always the same: to create digital products that are as intuitive as they are powerful.
+                    </p>
+                </div>
+              
+              <div class="flex gap-8 border-t border-slate-800 pt-8">
+                        <div>
+                            <span class="block text-3xl font-bold text-white">50+</span>
+                            <span class="text-slate-500 text-sm">Projects Delivered</span>
+                        </div>
+                        <div>
+                            <span class="block text-3xl font-bold text-white">100%</span>
+                            <span class="text-slate-500 text-sm">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3 grid grid-cols-1 gap-4 w-full">
+                    <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 flex items-center gap-4 hover:border-blue-500 transition-colors">
+                        <div class="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center">
+                            <i class="fa-brands fa-react text-2xl text-blue-400"></i>
+                        </div>
+                        <div>
+                            <span class="block font-semibold">Frontend</span>
+                            <span class="text-xs text-slate-500 uppercase">React / Tailwind</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 flex items-center gap-4 hover:border-green-500 transition-colors">
+                        <div class="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center">
+                            <i class="fa-brands fa-node-js text-2xl text-green-400"></i>
+                        </div>
+                        <div>
+                            <span class="block font-semibold">Backend</span>
+                            <span class="text-xs text-slate-500 uppercase">Node / Python</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 flex items-center gap-4 hover:border-purple-500 transition-colors">
+                        <div class="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center">
+                            <i class="fa-solid fa-brain text-2xl text-purple-400"></i>
+                        </div>
+                        <div>
+                            <span class="block font-semibold">AI/ML</span>
+                            <span class="text-xs text-slate-500 uppercase">RAG / OpenAI</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 flex items-center gap-4 hover:border-pink-500 transition-colors">
+                        <div class="w-12 h-12 rounded-lg bg-pink-500/10 flex items-center justify-center">
+                            <i class="fa-brands fa-figma text-2xl text-pink-400"></i>
+                        </div>
+                        <div>
+                            <span class="block font-semibold">Design</span>
+                            <span class="text-xs text-slate-500 uppercase">Figma / Adobe</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> </div> </section>
+  
+ 
+  
+
+    <div id="modal-web" class="modal opacity-0 pointer-events-none fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-sm" onclick="closeModal('modal-web')"></div>
+        <div class="relative bg-slate-800 max-w-2xl w-full rounded-2xl p-8 border border-slate-700">
+            <h4 class="text-2xl font-bold mb-4">Responsive Web App</h4>
+            <p class="text-slate-400 mb-6">Built using React and Node.js, this platform features $O(log n)$ search efficiency and a mobile-first design system.</p>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 mb-6">
+                <li>Custom API Integration</li>
+                <li>Tailwind CSS Styling</li>
+                <li>Payment Gateway Setup</li>
+            </ul>
+            <button onclick="closeModal('modal-web')" class="px-6 py-2 bg-slate-700 rounded-lg hover:bg-slate-600 transition">Close</button>
+        </div>
+    </div>
+
+    <div id="modal-ai" class="modal opacity-0 pointer-events-none fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-sm" onclick="closeModal('modal-ai')"></div>
+        <div class="relative bg-slate-800 max-w-2xl w-full rounded-2xl p-8 border border-slate-700">
+            <h4 class="text-2xl font-bold mb-4">Smart Chatbot Integration</h4>
+            <p class="text-slate-400 mb-6">A custom RAG (Retrieval-Augmented Generation) chatbot trained on enterprise data to provide 24/7 customer support.</p>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 mb-6">
+                <li>Natural Language Processing</li>
+                <li>Lead Generation Automation</li>
+                <li>WhatsApp & Web Deployment</li>
+            </ul>
+            <button onclick="closeModal('modal-ai')" class="px-6 py-2 bg-slate-700 rounded-lg hover:bg-slate-600 transition">Close</button>
+        </div>
+    </div>
+
+    <footer id="contact" class="py-20 border-t border-slate-800"> 
+      <div class="max-w-6xl mx-auto px-4 text-center"> 
+        <h3 class="text-3xl font-bold mb-4">Ready to innovate?</h3> 
+        <p class="text-slate-400 mb-8">I'm currently available for freelance projects and collaborations.</p> 
+        <a href="mailto:your-email@example.com" class="text-2xl font-bold hover:text-blue-400 underline decoration-blue-500 underline-offset-8 transition"> hello@descomputeracademy.com </a> 
+        <div class="mt-12 flex justify-center space-x-6 text-slate-500"> 
+          <a href="#" class="hover:text-white"><i class="fa-brands fa-github text-2xl"></i></a> 
+          <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin text-2xl"></i></a> 
+          <a href="#" class="hover:text-white"><i class="fa-brands fa-behance text-2xl"></i></a>
+           <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook text-2xl"></i></a>
+           <a href="#" class="hover:text-white"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+        </div> <p class="mt-12 text-sm text-slate-600">© 2024 De's Computer Academy. All rights reserved.</p> 
+        
+      </div> 
     </footer>
 
     <script>
-        // Initialize Icons
-        lucide.createIcons();
-
-        // AI Chat Simulation Logic
-        const chatForm = document.getElementById('chat-form');
-        const chatWindow = document.getElementById('chat-window');
-        const userInput = document.getElementById('user-input');
-
-        const botResponses = {
-            "default": "That's a great question! [Your Name] combines coding with design to create unique results. Would you like to see the portfolio highlights?",
-            "skills": "[Your Name] is proficient in React, Node.js, Python for AI, and the Adobe Creative Suite.",
-            "design": "Design is at the heart of everything. From branding to UI, [Your Name] focuses on visual storytelling.",
-            "contact": "You can reach [Your Name] via the contact button or email at hi@yourname.dev!"
-        };
-
-        chatForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const text = userInput.value.toLowerCase();
-            if (!text) return;
-
-            // User Message
-            addMessage(userInput.value, 'user');
-            userInput.value = '';
-
-            // Simulated AI Logic
-            setTimeout(() => {
-                let response = botResponses.default;
-                if (text.includes('skill') || text.includes('code')) response = botResponses.skills;
-                if (text.includes('design') || text.includes('graphic')) response = botResponses.design;
-                if (text.includes('contact') || text.includes('hire')) response = botResponses.contact;
-                
-                addMessage(response, 'bot');
-            }, 800);
-        });
-
-        function addMessage(text, role) {
-            const div = document.createElement('div');
-            div.className = `max-w-[85%] p-3 rounded-2xl text-sm ${
-                role === 'user' 
-                ? 'bg-cyan-600 text-white ml-auto rounded-tr-none' 
-                : 'bg-slate-800 text-slate-200 mr-auto rounded-tl-none'
-            }`;
-            div.innerText = text;
-            chatWindow.appendChild(div);
-            chatWindow.scrollTop = chatWindow.scrollHeight;
+        function openModal(id) {
+            document.getElementById(id).classList.remove('opacity-0', 'pointer-events-none');
+            document.body.classList.add('modal-active');
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.add('opacity-0', 'pointer-events-none');
+            document.body.classList.remove('modal-active');
         }
     </script>
 </body>
